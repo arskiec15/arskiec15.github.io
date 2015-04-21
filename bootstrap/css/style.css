@@ -230,7 +230,7 @@
 
   .square1:hover + .grow1 {
     opacity: 1;
-    width: 284px; 
+    width: 285px; 
     transition:width 1s,opacity 1s; 
     -webkit-transition:width 1s,opacity 1s;
     background: url('designer_image.jpg') no-repeat;
