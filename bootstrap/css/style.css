@@ -6,6 +6,8 @@
 		background-color: #fff;
 		font: 13px/20px normal Helvetica, Arial, sans-serif;
 		color: #4F5155;
+    text-align: center;
+    margin: 0 auto;
 	}
 
 	a {
@@ -47,6 +49,9 @@
 		margin: 20px 0 0 0;
 	}
 	
+  #footer {
+  }
+
 	#container {
 		margin: 10px;
 		border: 1px solid #D0D0D0;
@@ -129,6 +134,9 @@
 
   .col-md-12 {
   	width: 100%;
+    /*margin-left:-673px;
+    top:50%;
+    left:50%;*/
   }
 
   #face {
@@ -174,11 +182,13 @@
   } 
 
   .container{
-    width: 80%;
+    /*width: 80%;*/
+    width: 988px; 
+    margin: 0 auto;
     height: 600px;
     border: 1px solid transparent;
     clear: both;
-    overflow: visible;
+    position: relative;
     background: url('raoulCeldran_image.png') no-repeat;
   }
 
@@ -194,11 +204,9 @@
     width: 0px;
     height: 600px;
     left: 530px;
-    background: black; 
     position: relative;
     transition:width 1s; 
     -webkit-transition:width 1s;
-    background-color: green;
     background: url('coder_image.png') no-repeat;
   }
 
@@ -236,10 +244,6 @@
     background: url('designer_image.jpg') no-repeat;
   }
 
-  h2 span.spacer {
-    padding:0 5px;
-  }	
-
   h1 { 
     font: bold 38px/45px Helvetica, Sans-Serif; 
     position: absolute; 
@@ -247,8 +251,12 @@
     width: 100%; 
   }
 
+  h1 span.spacer {
+    padding:0 5px;
+  } 
+
   p span { 
-    position: absolute; top:250px; width: 20%;
+    position: absolute; top:250px; width: 160px;
     color: #444; 
     font: 17px/24px normal Helvetica, Arial, Sans-Serif; 
     letter-spacing: -1px;  
@@ -257,25 +265,27 @@
   }
 
   .coder_header{   	 
-    padding:0 5px;
+    padding:0px 5px;
     position: absolute;
-    left: 200px;
+    left: -200px;
   }
 
   p span.coder {
     padding:0 5px;
     position: absolute;
-    left: 200px;
+    left: 63px;
+    text-align: left;
   }	
 
   .designer_header{   	 
     padding:0 5px;
     position: absolute;
-    left: 300px;
+    left: 55px;
   }
 
   p span.designer {
     padding:0 5px;
     position: absolute;
-    left: 300px;
+    left: 304px;
+    text-align: left;
   }	
