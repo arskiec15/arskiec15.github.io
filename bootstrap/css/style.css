@@ -40,23 +40,52 @@
 
 	}
 	
-	p.footer {
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
-	
-  #footer {
+  #footer-bottom {
+    background-color: #EAEAEA;
   }
 
-	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		-webkit-box-shadow: 0 0 8px #D0D0D0;
-	}
+  #footer-copyright {
+    font: 15px/22px normal Helvetica, Arial, sans-serif;
+    color: #969696;
+    padding: 20px 0px 10px 0px;
+    float: left;
+  }
+
+  #nav-footer {
+    float: left;
+    list-style: none;
+    padding: 20px 0px 0px 120px;
+  }
+
+  #nav-footer li {
+    font-size: 14px;
+    display: inline-block;
+  }
+
+  #nav-footer a {
+    color: #969696;
+    padding: 20px;
+  }
+
+  .social-network {
+    position: absolute;
+    right: 7%;
+    top: 10px;
+  }
+
+  .social-network li {
+    display: inline-block;
+  }
+
+  .fb-bottom {
+    float: left;
+    padding: 15px 0px 0px 160px;
+  }
+
+  .twitter-bottom {
+    float: left;
+    padding: 16px 0px 0px 10px;
+  }
 
 	.navbar {
 		margin-bottom: 0px;
@@ -129,7 +158,7 @@
 	}
 
 	.row {
-
+    text-align: center;
 	}
 
   .col-md-12 {
@@ -182,17 +211,22 @@
   } 
 
   .container{
-    /*width: 80%;*/
-    width: 988px; 
     margin: 0 auto;
-    height: 600px;
-    border: 1px solid transparent;
+    /*border: 1px solid black;*/
     clear: both;
     position: relative;
-    background: url('raoulCeldran_image.png') no-repeat;
   }
 
-  .square{
+  /*#container {
+    width: 988px;
+    height: 60px; 
+    margin: 0 auto;
+    border: 1px solid black;
+    clear: both;
+    position: relative;
+  }*/
+
+  .square-coder{
     width: 683px;
     height: 600px;  
     opacity: 1;
@@ -200,7 +234,7 @@
     left: 0px;
   }
 
-  .grow {
+  .grow-coder {
     width: 0px;
     height: 600px;
     left: 530px;
@@ -210,14 +244,14 @@
     background: url('coder_image.png') no-repeat;
   }
 
-  .square:hover + .grow{
+  .square-coder:hover + .grow-coder{
     width: 500px; 
     transition:width 1s; 
     -webkit-transition:width 1s;
   }
 
-  .square1{
-    width: 666px;
+  .square-designer{
+    width: 620px;
     height: 600px;  
     opacity: 1;
     position: relative;
@@ -225,7 +259,7 @@
     right: -533px;
   }
 
-  .grow1 {  
+  .grow-designer {  
     opacity: 0;
     width: 400px;
     height: 600px;
@@ -236,7 +270,7 @@
     -webkit-transition:width 2s;
   }
 
-  .square1:hover + .grow1 {
+  .square-designer:hover + .grow-designer {
     opacity: 1;
     width: 285px; 
     transition:width 1s,opacity 1s; 
@@ -250,10 +284,6 @@
     top: 200px; 
     width: 100%; 
   }
-
-  h1 span.spacer {
-    padding:0 5px;
-  } 
 
   p span { 
     position: absolute; top:250px; width: 160px;
@@ -280,12 +310,12 @@
   .designer_header{   	 
     padding:0 5px;
     position: absolute;
-    left: 55px;
+    left: 80px;
   }
 
   p span.designer {
     padding:0 5px;
     position: absolute;
-    left: 304px;
+    left: 306px;
     text-align: left;
   }	
