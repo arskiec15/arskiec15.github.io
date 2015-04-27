@@ -307,7 +307,11 @@
 
 /*FOOTER*/
   #footer-bottom {
+    background: url('footer-bg.png');
     background-color: #EAEAEA;
+    -webkit-box-shadow: 1px -23px 0px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 1px -23px 0px 0px rgba(255,255,255,1);
+    box-shadow: 1px -23px 0px 0px rgba(255,255,255,1);
   }
 
   #footer-copyright {
@@ -336,7 +340,7 @@
 
   .fb-bottom {
     float: left;
-    padding: 15px 0px 0px 200px;
+    padding: 15px 0px 0px 150px;
   }
 
   .twitter-bottom {
@@ -345,9 +349,11 @@
   }
 /*END FOOTER*/
 .dark{
-    background-color: #F0F0F0;
+  background: url('dark-bg.png'); 
+  background-color: #F0F0F0;
 }
 .header-center {
+  padding-top: 50px;
   text-align: center;
 }
 .header-center span {
@@ -376,6 +382,7 @@ ul.rig {
   list-style: none;
   font-size: 0px;
   margin-left: -5%; /* should match li left margin */
+  padding-bottom: 50px;
 }
 ul.rig li {
   display: inline-block;
@@ -430,7 +437,7 @@ ul.rig.columns-4 li {
     display: block;
   }
   ul.rig {
-    margin-left: 0;
+    margin-right: 20px;
   }
   ul.rig li {
     width: 100% !important; /* over-ride all li styles */
@@ -440,65 +447,3 @@ ul.rig.columns-4 li {
 ul.rig a {
   text-decoration: none;
 }
-/*#elm1 {
-  /*background: #FFFFFF;
-  padding:12px;
-  border-radius: 10px;
-  border: 1px solid #FFFFFF;*/
-  /*background-color: #FFFFFF;
-  padding:8px;
-  width: 335px;
-  height: 265px;
-  border-radius:12px; 
-  margin:20px;
-  overflow: hidden; 
-  -webkit-box-shadow: 0 0 5px #D8D8D8;
-  box-shadow: 0 0 5px #D8D8D8; 
-}
-#elm2 {
-  /*background: #FFFFFF;
-  padding:12px;
-  border-radius: 10px;
-  border: 1px solid #FFFFFF;*/
-  /*background-color: #FFFFFF;
-  padding:8px;
-  border-radius:12px; 
-  overflow: hidden; 
-  -webkit-box-shadow: 0 0 5px #D8D8D8;
-  box-shadow: 0 0 5px #D8D8D8; 
-}
-#elm3 {
-  /*background: #FFFFFF;
-  padding:12px;
-  border-radius: 10px;
-  border: 1px solid #FFFFFF;*/
-  /*background-color: #FFFFFF;
-  padding:8px;
-  border-radius:12px; 
-  overflow: hidden; 
-  -webkit-box-shadow: 0 0 5px #D8D8D8;
-  box-shadow: 0 0 5px #D8D8D8; 
-}
-div.wrapper{  
-    float:left; /* important */  
-   /* position:relative; /* important(so we can absolutely position the description div */  
-/*}  
-div.description{  
-    border-radius: 10px;
-    position:absolute; /* absolute position (so we can position it where we want)*/  
-   /* bottom:20px; /* position will be on bottom */  
-    /*left:20px;  
-    width:335px;  
-    height:100px;
-    /* styling bellow */  
-   /* background-color:blue;  
-    font-family: 'tahoma';  
-    font-size:15px;  
-    color:black;  
-    opacity:1; /* transparency */  
-    /*filter:alpha(opacity=60); /* IE transparency */  
-/*}  
-p.description_content{  
-    padding:10px;  
-    margin:0px;  
-}*/ 
