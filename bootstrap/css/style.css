@@ -326,3 +326,130 @@
     padding: 16px 0px 0px 25px;
   }
 /*END FOOTER*/
+.dark{
+    background-color: #F0F0F0;
+}
+ul.rig {
+  list-style: none;
+  font-size: 0px;
+  margin-left: -2.5%; /* should match li left margin */
+}
+ul.rig li {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 0 2.5% 2.5%;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-size: 1rem;
+  vertical-align: top;
+  box-shadow: 0 0 5px #ddd;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+ul.rig li img {
+  max-width: 100%;
+  width: 314px;
+  height: auto;
+  margin: 0 0 10px;
+}
+ul.rig li h3 {
+  margin: 0 0 5px;
+}
+ul.rig li p {
+  font-size: .9em;
+  line-height: 1.5em;
+  color: #999;
+}
+/* class for 2 columns */
+ul.rig.columns-2 li {
+  width: 47.5%; /* this value + 2.5 should = 50% */
+}
+/* class for 3 columns */
+ul.rig.columns-3 li {
+  width: 30.83%; /* this value + 2.5 should = 33% */
+}
+/* class for 4 columns */
+ul.rig.columns-4 li {
+  width: 22.5%; /* this value + 2.5 should = 25% */
+}
+ 
+@media (max-width: 480px) {
+  ul.grid-nav li {
+    display: block;
+    margin: 0 0 5px;
+  }
+  ul.grid-nav li a {
+    display: block;
+  }
+  ul.rig {
+    margin-left: 0;
+  }
+  ul.rig li {
+    width: 100% !important; /* over-ride all li styles */
+    margin: 0 0 20px;
+  }
+}
+/*#elm1 {
+  /*background: #FFFFFF;
+  padding:12px;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;*/
+  /*background-color: #FFFFFF;
+  padding:8px;
+  width: 335px;
+  height: 265px;
+  border-radius:12px; 
+  margin:20px;
+  overflow: hidden; 
+  -webkit-box-shadow: 0 0 5px #D8D8D8;
+  box-shadow: 0 0 5px #D8D8D8; 
+}
+#elm2 {
+  /*background: #FFFFFF;
+  padding:12px;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;*/
+  /*background-color: #FFFFFF;
+  padding:8px;
+  border-radius:12px; 
+  overflow: hidden; 
+  -webkit-box-shadow: 0 0 5px #D8D8D8;
+  box-shadow: 0 0 5px #D8D8D8; 
+}
+#elm3 {
+  /*background: #FFFFFF;
+  padding:12px;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;*/
+  /*background-color: #FFFFFF;
+  padding:8px;
+  border-radius:12px; 
+  overflow: hidden; 
+  -webkit-box-shadow: 0 0 5px #D8D8D8;
+  box-shadow: 0 0 5px #D8D8D8; 
+}
+div.wrapper{  
+    float:left; /* important */  
+   /* position:relative; /* important(so we can absolutely position the description div */  
+/*}  
+div.description{  
+    border-radius: 10px;
+    position:absolute; /* absolute position (so we can position it where we want)*/  
+   /* bottom:20px; /* position will be on bottom */  
+    /*left:20px;  
+    width:335px;  
+    height:100px;
+    /* styling bellow */  
+   /* background-color:blue;  
+    font-family: 'tahoma';  
+    font-size:15px;  
+    color:black;  
+    opacity:1; /* transparency */  
+    /*filter:alpha(opacity=60); /* IE transparency */  
+/*}  
+p.description_content{  
+    padding:10px;  
+    margin:0px;  
+}*/ 
