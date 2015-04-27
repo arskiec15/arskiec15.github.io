@@ -6,6 +6,7 @@
 		background-color: #fff;
 		font: 13px/20px normal Helvetica, Arial, sans-serif;
 		color: #4F5155;
+    text-align: center;
     margin: 0 auto;
 	}
 
@@ -40,6 +41,7 @@
   }
 
   .navbar-default {
+      background: url('navbar-bg.png');
       background-color: #000000;
       border-radius: 0px;
   }
@@ -124,10 +126,24 @@
   }
 
   .row {
-    text-align: center;
+ 
   }
-
-  .col-md-12 {
+  .col-1{
+    width: 16.66%; 
+  }
+  .col-2{
+    width: 33.33%; 
+  }
+  .col-3{
+    width: 50%; 
+  }
+  .col-4 {
+    width: 66.66%;
+  }
+  .col-5 {
+    width: 83.33%;
+  }
+  .col-6 {
     width: 100%;
   }
 
@@ -261,7 +277,8 @@
   .coder_header{     
     padding:0px 5px;
     position: absolute;
-    left: -252px;
+    width: 0px;
+    left: 10px;
   }
 
   p span.coder {
@@ -275,7 +292,8 @@
   .designer_header{      
     padding:0 5px;
     position: absolute;
-    left: 183px;
+    left: 410px;
+    width: 0px;
   }
 
   p span.designer {
@@ -329,21 +347,46 @@
 .dark{
     background-color: #F0F0F0;
 }
+.header-center {
+  text-align: center;
+}
+.header-center span {
+  display: inline-block;
+  position: relative;  
+}
+.header-center span:before,
+.header-center span:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-bottom: 1px solid #999;
+  top: 0;
+  width: 367px;
+}
+.header-center span:before {
+  right: 100%;
+}
+.header-center span:after {
+  left: 100%;
+}
+.header-center h4 {
+  color: #999;
+}
 ul.rig {
   list-style: none;
   font-size: 0px;
-  margin-left: -2.5%; /* should match li left margin */
+  margin-left: -5%; /* should match li left margin */
 }
 ul.rig li {
   display: inline-block;
-  padding: 10px;
+  padding: 8px;
   margin: 0 0 2.5% 2.5%;
   background: #fff;
-  border: 1px solid #ddd;
+  border-radius: 5px;
   font-size: 16px;
   font-size: 1rem;
   vertical-align: top;
-  box-shadow: 0 0 5px #ddd;
+  box-shadow: 0 0 10px #ddd;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -351,14 +394,17 @@ ul.rig li {
 ul.rig li img {
   max-width: 100%;
   width: 314px;
+  border-radius: 5px;
+  overflow: hidden;
   height: auto;
   margin: 0 0 10px;
 }
 ul.rig li h3 {
   margin: 0 0 5px;
+  color: #444;
 }
 ul.rig li p {
-  font-size: .9em;
+  font-size: 14px;
   line-height: 1.5em;
   color: #999;
 }
@@ -390,6 +436,9 @@ ul.rig.columns-4 li {
     width: 100% !important; /* over-ride all li styles */
     margin: 0 0 20px;
   }
+}
+ul.rig a {
+  text-decoration: none;
 }
 /*#elm1 {
   /*background: #FFFFFF;
