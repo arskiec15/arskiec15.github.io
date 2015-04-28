@@ -17,10 +17,9 @@
 	}
 
 	h1 {
+    font: bold 38px/45px Helvetica, Sans-Serif; 
 		color: #444;
 		background-color: transparent;
-		font-size: 19px;
-		font-weight: normal;
 		margin: 0 0 14px 0;
 		padding: 14px 15px 10px 15px;
 	}
@@ -76,6 +75,10 @@
 
   .navbar-toggle {
 
+  }
+
+  .navbar-collapse.in {
+    overflow-y: visible;
   }
 
   .navbar-default .navbar-toggle:hover,
@@ -258,13 +261,6 @@
     background: url('designer_image.jpg') no-repeat;
   }
 
-  h1 { 
-    font: bold 38px/45px Helvetica, Sans-Serif; 
-    position: absolute; 
-    top: 200px; 
-    width: 100%; 
-  }
-
   p span { 
     position: absolute; top:250px; width: 160px;
     color: #444; 
@@ -279,6 +275,7 @@
     position: absolute;
     width: 0px;
     left: 10px;
+    top: 200px; 
   }
 
   p span.coder {
@@ -294,6 +291,7 @@
     position: absolute;
     left: 410px;
     width: 0px;
+    top: 200px;  
   }
 
   p span.designer {
@@ -445,5 +443,94 @@ ul.rig.columns-4 li {
   }
 }
 ul.rig a {
+  text-decoration: none;
+}
+
+/*ABOUT*/
+.img-about {
+  float: left;
+  border-bottom: 1px solid #999;
+}
+.header-about {
+  text-align: left;
+  font: bold 53px/68px Helvetica, Sans-Serif; 
+}
+.intro {
+  font: normal 30px/39px Helvetica, Sans-Serif; 
+  color: #444;
+  text-align: left;
+}
+.words {
+  font: normal 22px/36px Helvetica, Sans-Serif; 
+  text-align: left;
+  border-bottom: 1px solid #999;
+}
+ul.snaps {
+  list-style: none;
+  font-size: 0px;
+ /* should match li left margin */
+}
+ul.snaps li {
+  float: left;
+  display: inline-block;
+  padding: 8px;
+  margin: 0 0 2.5% 2.5%;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-size: 1rem;
+  vertical-align: top;
+  box-shadow: 0 0 10px #ddd;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+ul.snaps li img {
+  max-width: 100%;
+  width: 130px;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 0 auto;
+}
+ul.snaps li h3 {
+  margin: 0 0 5px;
+  color: #444;
+}
+ul.snaps li p {
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #999;
+}
+/* class for 2 columns */
+ul.snaps.columns-2 li {
+  width: 47.5%; /* this value + 2.5 should = 50% */
+}
+/* class for 3 columns */
+ul.snaps.columns-3 li {
+  width: 30.83%; /* this value + 2.5 should = 33% */
+}
+/* class for 4 columns */
+ul.snaps.columns-4 li {
+  width: 22.5%; /* this value + 2.5 should = 25% */
+}
+ 
+@media (max-width: 480px) {
+  ul.grid-nav li {
+    display: block;
+    margin: 0 0 5px;
+  }
+  ul.grid-nav li a {
+    display: block;
+  }
+  ul.snaps {
+    margin-left: 50px;
+    margin-right: 70px;
+  }
+  ul.snaps li {
+    width: 100% !important; /* over-ride all li styles */
+    margin: 0 0 20px;
+  }
+}
+ul.snaps a {
   text-decoration: none;
 }
