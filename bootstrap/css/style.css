@@ -465,6 +465,7 @@ ul.rig a {
   text-align: left;
   border-bottom: 1px solid #999;
 }
+/*SNAPSHOTS**/
 ul.snaps {
   list-style: none;
   font-size: 0px;
@@ -543,4 +544,149 @@ ul.snaps.columns-4 li {
 }
 ul.snaps a {
   text-decoration: none;
+}
+/*END SNAPSHOTS*/
+
+#img-pie {
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  display: inline-block;
+}
+.pie-chart h2 {
+  font: normal 33px/46px Helvetica, Sans-Serif; 
+  text-align: left;
+}
+.pie-chart li {
+  font: normal 16px/22px Helvetica, Sans-Serif; 
+  list-style: none;
+  text-align: left;
+  margin-left: -40px !important;
+}
+.part-designer {
+  padding:50px;
+float: left;
+}
+.part-coder {
+  padding:50px;
+float: right;
+}
+@media (max-width: 480px) {
+  ul.grid-nav li {
+    display: block;
+    margin: 0 0 5px;
+  }
+  ul.grid-nav li a {
+    display: block;
+  }
+  ul.ul {
+    margin: 0 auto;
+  }
+  ul.ul li {
+    width: 100% !important; /* over-ride all li styles */
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  .part-coder h2{
+    padding:0px;
+  }
+  .part-designer h2 {
+    padding:0px;
+  }
+}
+/*SKILLS*/
+.label {
+  color:#444;
+}
+.chart { width: 100%; }
+
+.chart li {
+  border-radius: 4px 4px 0 0; /* Remember vendor prefixes */
+  box-shadow: 0 1px 0 0 rgba(255,255,255,.6) inset; /* Remember vendor prefixes */
+  display: block;
+  height: 125px;
+  padding: 25px 0;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.chart .axis { 
+  display: none;
+  top: -25px;
+  width: 11%;
+ }
+
+.chart .label {
+  background: #eaeaea;
+  margin: -.6em 0 65px 0;
+}
+
+.chart .percent {
+  font-size: 30px;
+  letter-spacing: -3px;
+  opacity: .4;
+  width: 100%;
+}
+
+.chart .teal {
+background: #4ecdc4;
+background-image: linear-gradient(#76d8d1, #4ecdc4 70%);
+border: 1px solid #4ecdc4;
+}
+
+.chart .red {
+background: #FF1919;
+background-image: linear-gradient(#FF5E5E, #FF1919 70%);
+border: 1px solid #FF1919;
+}
+
+.chart .purple {
+background: #1919D1;
+background-image: linear-gradient(#5E5EDF, #1919D1 70%);
+border: 1px solid #1919D1;
+}
+
+.chart .yellow {
+background: #FFFF00;
+background-image: linear-gradient(#FFFF66, #FFFF00 70%);
+border: 1px solid #FFFF00;
+}
+
+.chart .brown {
+background: #663300;
+background-image: linear-gradient(#996633, #663300 70%);
+border: 1px solid #663300;
+}
+
+.chart span { font-size: 30px;  }
+@media (min-width: 700px) {
+  .chart {
+    background: url("http://cl.ly/QSpc/bg-chart.png") right top repeat-x;
+    height: 425px;
+    margin: 0 auto -32px;
+  }
+  .chart li {
+    display: inline-block;
+    height: 425px;
+    margin: 0 1.8% 0 0;
+    width: 14%;
+  }
+  .chart .axis {
+    display: inline-block;
+  }
+  .chart .percent {
+    font-size: 40px;
+    position: absolute;
+  }
+  .chart .skill {
+    bottom: 20px;
+    font-size: 16px;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1000px) {
+  .chart .percent {
+    font-size: 62px;
+  }
 }
