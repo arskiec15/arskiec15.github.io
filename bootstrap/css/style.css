@@ -690,3 +690,9 @@ border: 1px solid #663300;
     font-size: 62px;
   }
 }
+
+/*PORTFOLIO*/
+.portfolio-details
+{
+  padding: 50px 50px 50px 50px;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Design Portfolio of Raoul Celdran</title>
+		<link rel = "shortcut icon" href = "images/icon.ico"/>
+		<meta name = "viewport" content = "width=device-width, initial scale = 1.0">
+		<link href = "bootstrap/css/bootstrap.css" rel = "stylesheet">
+		<link href = "bootstrap/css/style.css" rel = "stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+	<!--NAVBAR-->
+	<nav class = "navbar navbar-default" role = "navigation">
+		<div class = "container-fluid">
+			<div class = "navbar-header">
+				<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target= "#bs-example-navbar-collapse-1">
+					<span class = "sr-only">Toggle navigation</span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+				<a class = "navbar-brand" href = "index">
+					<!--For Desktop-->
+					<img src = "images/icon.png" class = "img img-responsive hidden-xs" width = "70px" height = "70px"/>
+					<!--For Mobile--> 	
+					<img src = "images/icon.png" class = "img img-responsive visible-xs" width = "40px" height = "40px"/>
+				</a>
+			</div>
+
+			<!-- Navbar Toggle -->
+			<div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
+				<ul class = "navbar navbar-nav">
+					<li>
+						<a href = "about">about <span class = "sr-only">(current)</span></a>
+					</li>
+					<li>
+						<a href = "featured">featured</a>
+					</li>
+					<li>
+						<a href = "portfolio">portfolio</a>
+					</li>
+					<li>
+						<a href = "blog">blog</a>
+					</li>
+					<li>
+						<a href = "contact">contact</a>
+					</li>					
+				</ul>
+				<ul class = "social-network hidden-md hidden-sm hidden-xs">
+					<li>
+						<a href = "https://www.facebook.com/raoulkristoffer.celdran" target = "_blank"><img src = "images/facebook-icon-top.png"/></a>
+					</li>
+						<a href = "https://twitter.com/arskiec15" target = "_blank"><img src = "images/twitter-icon.png" width = "40" style = "padding-top:8px"/></a>
+					<li>
+						<a href = "https://www.linkedin.com/profile/view?id=395117019"><img src = "images/linkedin-icon.png" width = "60" title = "Photo Courtesy of http://picons.me"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--END OF NAVBAR-->
+	<div id="body">
+		<div id = "content" class = "content clearfix">
+			<div class = "dark">
+				<div class = "row">
+					<div class = "col-6">
+						<div class = "container">	
+							<div class = "portfolio-details">
+								<ul class="rig">
+									<li>
+										<a href = "#"><img src="images/portfolioWeb.jpg"/>
+										<h3>Raoul Celdran</h3>
+											<p>Brand &amp; Website Design Portofolio</p></a>
+									</li>
+									<li>
+										<a href = "#"><img src="images/ici.jpg" />
+										<h3>ICI UI/UX Design Usability Test</h3>
+											<p>Website Usability Test</p></a>
+									</li>
+									<li>
+										<a href = "#"><img src="images/vector.jpg"/>
+										<h3>Vector Art</h3>
+											<p>Graphic Design</p></a>
+									</li>
+									<li>
+										<a href = "#"><img src="images/gametitle.jpg"/>
+										<h3>Cowboy Hates Cockroaches</h3>
+											<p>Game Design</p></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div> 
+	<!--Footer-->
+    <footer style = "padding-top:30px">
+		<div id = "footer-bottom">
+			<div class = "row">
+				<div class = "col-6">
+					<div class = "container">
+						<p id = "footer-copyright">&copy; 2015 Raoul Celdran</p>
+						<ul id = "nav-footer" class = "hidden-xs hidden-sm">
+							<li>
+								<a href = "about">about</a>
+							</li>
+							<li>
+								<a href = "featured">featured</a>
+							</li>
+							<li>
+								<a href = "portfolio">portfolio</a>
+							</li>
+							<li>
+								<a href = "blog">blog</a>
+							</li>
+							<li>
+								<a href = "contact">contact</a>
+							</li>
+						</ul>
+						<div class = "fb-bottom hidden-xs hidden-md hidden-sm">
+							<a href = "https://www.facebook.com/raoulkristoffer.celdran" target = "_blank" title = "Photo Courtesy of Dan Leech at http://www.iconarchive.com/show/simple-icons-by-danleech/facebook-icon.html"><img src = "images/facebook-icon.png"/></a>
+						</div>
+						<div class = "twitter-bottom hidden-xs hidden-md hidden-sm">
+							<a href="https://twitter.com/arskiec15" class="twitter-follow-button" data-show-count="false" target = "_blank">Follow @arskiec15</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>	
+	</footer>
+	<!--End Footer--> 	 
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript">
+	$(".portfolio-details ul li").hover(function() { // Mouse over
+	  $(this).siblings().stop().fadeTo(300, 0.6);
+	  $(this).parent().siblings().stop().fadeTo(300, 0.3); 
+	}, function() { // Mouse out
+ 	  $(this).siblings().stop().fadeTo(300, 1);
+ 	  $(this).parent().siblings().stop().fadeTo(300, 1);
+	});
+	</script>
+</body>
+</html>
