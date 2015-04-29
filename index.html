@@ -101,23 +101,25 @@
 							<h4><span class = "hidden-md hidden-sm hidden-xs">MY LATEST WORK AND INTERESTS</span></h4>
 							<h4 class = "hidden-lg">MY WORK AND INTERESTS</h4>
 						</div>
-						<ul class="rig">
-							<li>
-								<a id="elm1"  href = "#"><img src="images/portfolioWeb.jpg"/>
-								<h3>Raoul Celdran</h3>
-									<p>Brand &amp; Website Design Portofolio</p></a>
-							</li>
-							<li>
-								<a id = "elm2" href = "#"><img src="images/vector.jpg" width = "100"/>
-								<h3>Vector Art</h3>
-									<p>Graphic Design</p></a>
-							</li>
-							<li>
-								<a id="elm3" href = "#"><img src="images/gametitle.jpg" width = "100"/>
-								<h3>Cowboy Hates Cockroaches</h3>
-									<p>Game Design</p></a>
-							</li>
-						</ul>
+						<div class = "work-details">
+							<ul class="rig">
+								<li>
+									<a href = "#"><img src="images/portfolioWeb.jpg"/>
+									<h3>Raoul Celdran</h3>
+										<p>Brand &amp; Website Design Portofolio</p></a>
+								</li>
+								<li>
+									<a href = "#"><img src="images/vector.jpg" width = "100"/>
+									<h3>Vector Art</h3>
+										<p>Graphic Design</p></a>
+								</li>
+								<li>
+									<a href = "#"><img src="images/gametitle.jpg" width = "100"/>
+									<h3>Cowboy Hates Cockroaches</h3>
+										<p>Game Design</p></a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -162,20 +164,13 @@
 	<!--End Footer--> 	 
 	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 	<script type="text/javascript">
-$(document).mousemove(function() {    
-    if($('#elm1').is(':hover')){
-        $('#elm2').css({'opacity':'0.5'}) && $('#elm3').css({'opacity':'0.5'});
-    }
-    else if($('#elm2').is(':hover')){
-        $('#elm1').css({'opacity':'0.5'}) && $('#elm3').css({'opacity':'0.5'});
-    }
-    else if($('#elm3').is(':hover')){
-        $('#elm1').css({'opacity':'0.5'}) && $('#elm2').css({'opacity':'0.5'});
-    }
-    else {
-        $('#elm1').css({'opacity':'1'}) && $('#elm2').css({'opacity':'1'}) && $('#elm3').css({'opacity':'1'});
-    }
-});
+	$(".work-details ul li").hover(function() { // Mouse over
+	  $(this).siblings().stop().fadeTo(300, 0.6);
+	  $(this).parent().siblings().stop().fadeTo(300, 0.3); 
+	}, function() { // Mouse out
+ 	  $(this).siblings().stop().fadeTo(300, 1);
+ 	  $(this).parent().siblings().stop().fadeTo(300, 1);
+	});
 	</script>
 </body>
 </html>
