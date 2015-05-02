@@ -61,23 +61,23 @@
 	</nav>
 	<!--END OF NAVBAR-->
 	<!--CONTACT MODAL-->
-
+	<div id="form-content" class="modal fade in" style="display: none;">
     	<div class="modal-header">
     	    <a class="close" data-dismiss="modal">×</a>
     	    <h3 class = "contact">Send me a message</h3>
-
-
-    	    <form action="//formspree.io/raoulkristofferceldran@yahoo.com"
-      metod="POST">
-    	        <label class="label" for="name">Your Name</label><br>
-    	        <input type="text" name="name" class="input-xlarge"><br>
-    	        <label class="label" for="email">Your E-mail</label><br>
-    	        <input type="email" name="_replyto" class="input-xlarge"><br>
-    	        <label class="label" for="message">Enter a Message</label><br>
-    	        <textarea name="message" class="input-xlarge"></textarea>
-        		<input class="btn btn-success" type="submit" value="Send!" id="submit" style = "margin-top: 25px;">
-    	    </form>
-
+    	</div>
+    	<div class="modal-body">
+			<form action="//formspree.io/raoulkristofferceldran@yahoo.com" method="POST">
+      			<h1>Send me an email</h1>
+    				<label>Your Name:</label>
+    					<input type="text" name="name">
+    				<label>Your Message:</label>
+    					<input type="text" name="message">
+    				<label>Your Email:</label>
+    					<input type="email" name="_replyto">
+    					<input type="submit" value="Send email">
+			</form>
+    	</div>
 	</div>
 	<!--END CONTACT MODAL-->
 	<div id="body">
