@@ -717,9 +717,9 @@ border: 1px solid #663300;
 .modal{
   position:fixed;
   top:10%;
-  left:50%;
+  left:60%;
   z-index:1050;
-  width:500px;
+  width:250px;
   margin-left:-280px;
   height:310px;
   background-color:#ffffff;
@@ -737,6 +737,10 @@ border: 1px solid #663300;
   background-clip:padding-box;
   outline:none;
   }
+a.close {
+  position: relative;
+  left:-250px;
+}
 .modal.fade{
   -webkit-transition:opacity .3s linear, top .3s ease-out;
   -moz-transition:opacity .3s linear, top .3s ease-out;
@@ -802,6 +806,7 @@ border: 1px solid #663300;
 }
 h3.contact {
   text-align: left;
+  font-size: 20px;
   font-weight: bold;
 }
 form.contact {

@@ -67,18 +67,16 @@
     	    <h3 class = "contact">Send me a message</h3>
     	</div>
     	<div class="modal-body">
-    	    <form class="contact" name="contact" action="//formspree.io/raoulkristofferceldran@yahoo.com"
+    	    <form class="contact" name = "contact" action="//formspree.io/raoulkristofferceldran@yahoo.com"
       metod="POST">
     	        <label class="label" for="name">Your Name</label><br>
     	        <input type="text" name="name" class="input-xlarge"><br>
     	        <label class="label" for="email">Your E-mail</label><br>
-    	        <input type="email" name="email" class="input-xlarge"><br>
+    	        <input type="email" name="_replyto" class="input-xlarge"><br>
     	        <label class="label" for="message">Enter a Message</label><br>
     	        <textarea name="message" class="input-xlarge"></textarea>
+        		<input class="btn btn-success" type="submit" value="Send!" id="submit" style = "margin-top: 25px;">
     	    </form>
-    	</div>
-    	<div class="modal-footer">
-        	<input class="btn btn-success" type="submit" value="Send!" id="submit">
     	</div>
 	</div>
 	<!--END CONTACT MODAL-->
