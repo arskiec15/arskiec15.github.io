@@ -737,6 +737,13 @@ border: 1px solid #663300;
   background-clip:padding-box;
   outline:none;
   }
+  @media (max-width: 480px) {
+    .modal {
+      position: fixed;
+      top: 10%;
+      left:100%;
+    }
+}
 a.close {
   position: relative;
   left:-250px;
