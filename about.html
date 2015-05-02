@@ -44,7 +44,7 @@
 						<a href = "blog">blog</a>
 					</li>
 					<li>
-						<a href = "contact">contact</a>
+						<a href = "contact" data-toggle = "modal">contact</a>
 					</li>					
 				</ul>
 				<ul class = "social-network hidden-md hidden-sm hidden-xs">
@@ -60,6 +60,28 @@
 		</div>
 	</nav>
 	<!--END OF NAVBAR-->
+	<!--CONTACT MODAL-->
+	<div id="form-content" class="modal fade in" style="display: none;">
+    	<div class="modal-header">
+    	    <a class="close" data-dismiss="modal">×</a>
+    	    <h3 class = "contact">Send me a message</h3>
+    	</div>
+    	<div class="modal-body">
+    	    <form class="contact" name="contact" action="//formspree.io/raoulkristofferceldran@yahoo.com"
+      metod="POST">
+    	        <label class="label" for="name">Your Name</label><br>
+    	        <input type="text" name="name" class="input-xlarge"><br>
+    	        <label class="label" for="email">Your E-mail</label><br>
+    	        <input type="email" name="email" class="input-xlarge"><br>
+    	        <label class="label" for="message">Enter a Message</label><br>
+    	        <textarea name="message" class="input-xlarge"></textarea>
+    	    </form>
+    	</div>
+    	<div class="modal-footer">
+        	<input class="btn btn-success" type="submit" value="Send!" id="submit">
+    	</div>
+	</div>
+	<!--END CONTACT MODAL-->
 	<div id="body">
 		<div id = "content" class = "content clearfix">
 			<section id = "section" class = "light nopad-t nopad-b">
@@ -131,9 +153,8 @@
 				</div>
 			</div>
 		</div>
-    </div> 
-    <div class = "skills">
-    	<section id = "section" class = "light nopad-t nopad-b">
+    	<div class = "skills">
+    		<section id = "section" class = "light nopad-t nopad-b">
     			<div class = "row">
 					<div class = "col-6">
 						<div class = "container">
@@ -172,6 +193,7 @@
 				</div>
 			</section>
 		</div>
+	</div> 
 	<!--Footer-->
     <footer style = "padding-top:30px">
 		<div id = "footer-bottom">
