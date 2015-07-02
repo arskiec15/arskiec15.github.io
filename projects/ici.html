@@ -43,6 +43,9 @@
 					<li>
 						<a href = "http://iphoneblog.net/author/raoul" target = "_blank">blog</a>
 					</li>
+					<li>
+						<a href = "#form-content" data-toggle = "modal">contact</a>
+					</li>
 				</ul>
 				<ul class = "social-network hidden-md hidden-sm hidden-xs">
 					<li>
@@ -57,6 +60,25 @@
 		</div>
 	</nav>
 	<!--END OF NAVBAR-->
+	<!--CONTACT MODAL-->
+	<div id="form-content" class="modal fade in" style="display: none;">
+    	<div class="modal-header">
+    	    <a class="close" data-dismiss="modal">×</a>
+    	    <h3 class = "contact">Send me a message</h3>
+    	</div>
+    	<div class="modal-body">
+			<form action="//formspree.io/raoulkristofferceldran@yahoo.com" method="POST">
+    				<label class = "label">Your Name:</label>
+    					<input type="text" name="name">
+    				<label class = "label">Your Message:</label>
+    					<input type="text" name="message">
+    				<label class = "label">Your Email:</label>
+    					<input type="email" name="_replyto">
+    					<input class = "btn btn-success" type="submit" value="Send email" style = "margin-top:25px">
+			</form>
+    	</div>
+	</div>
+	<!--END CONTACT MODAL-->
 	<div id="body">
 		<div id = "content" class = "content clearfix">
 			<section id = "section" class = "light nopad-t nopad-b">
