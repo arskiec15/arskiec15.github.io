@@ -927,3 +927,11 @@ form.contact {
 .summary {
   text-align: left;
 }
+.specOb{
+  width: 1400px;
+}
+  @media (max-width: 480px) {
+    .specOb {
+      width: 250px;
+    }
+  }
