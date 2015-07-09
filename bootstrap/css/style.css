@@ -337,12 +337,12 @@
 
   .fb-bottom {
     float: left;
-    padding: 15px 0px 0px 150px;
+    padding: 15px 0px 0px 0px;
   }
 
   .twitter-bottom {
     float: left;
-    padding: 16px 0px 0px 25px;
+    padding: 16px 0px 0px 10px;
   }
 /*END FOOTER*/
 .dark{
