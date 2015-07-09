@@ -935,3 +935,13 @@ form.contact {
       width: 250px;
     }
   }
+.gameSnaps {
+  padding-left: 140px;
+}
+  @media (max-width: 480px){
+    .gameSnaps {
+      padding-left: 0px;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+  }
