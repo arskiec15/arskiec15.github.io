@@ -912,6 +912,16 @@ form.contact {
       padding-left: 0px;
     }
 }
+.rcDesc {
+  padding-left: 105px;
+  padding-bottom: 10px;
+}
+  @media (max-width: 480px) {
+    .rcDesc {
+      width: 100%;
+      padding-left: 0px;
+    }
+}
 .iciDesc {
   padding-left: 10px;
   padding-bottom: 10px;
