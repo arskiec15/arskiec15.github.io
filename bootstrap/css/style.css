@@ -22,7 +22,22 @@
 		margin: 0 0 14px 0;
 		padding: 14px 15px 10px 15px;
 	}
+  .c_header{
+    position: absolute; 
+    top: 200px; 
+    left: 4px; 
 
+  }
+  .d_header{
+    position: absolute;
+    top: 200px;
+    right: 112px;
+  }
+  h2 span{
+    color: #444; 
+    font: bold 34px/55px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+  }
 	code {
 		font-family: Consolas, Monaco, Courier New, Courier, monospace;
 		font-size: 12px;
@@ -194,9 +209,12 @@
 
   .container{
     margin: 0 auto;
-    border: 1px solid transparent;
     clear: both;
     position: relative;
+  }
+
+  #container{
+    height: 600px;
   }
 
   /*#container {
@@ -255,7 +273,7 @@
   content: "";
   position: absolute;
   z-index: -1;
-  top: 0;
+  top: -11px;
   width: 621px;
   left: 682px;
   right: 0;
@@ -307,7 +325,7 @@
     content: "";
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: -10px;
     left: 0;
     right: 581px;
     bottom: 0;
@@ -361,7 +379,7 @@
     -webkit-transition:width 1s;
     background: url('designer_image.jpg') no-repeat;
   }*/
-
+/*face styles*/
   p span { 
     position: absolute; top:250px; width: 160px;
     color: #444; 
@@ -371,37 +389,23 @@
     padding: 10px; 
   }
 
-  .coder_header{     
-    padding:0px 5px;
-    position: absolute;
-    width: 0px;
-    left: 10px;
-    top: 200px; 
-  }
-
-  p span.coder {
+  .coder {
     padding:0 5px;
     position: absolute;
-    left: 10px;
+    top: 270px;
+    left: 0px;
     width: 200px;
     text-align: left;
   } 
 
-  .designer_header{      
+  .designer{
     padding:0 5px;
     position: absolute;
-    left: 410px;
-    width: 0px;
-    top: 200px;  
-  }
-
-  p span.designer {
-    padding:0 5px;
-    position: absolute;
-    left: 410px;
+    top: 270px;
+    right: 50px;
     width: 200px;
     text-align: left;
-  } 
+  }
 /*END CONTENT*/
 
 /*FOOTER*/
