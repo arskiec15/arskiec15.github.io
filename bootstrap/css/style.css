@@ -168,6 +168,50 @@
 
   }
 
+  .image {
+    position: relative;
+  }
+
+  .m-coder {
+    position: absolute;
+    top: 200px;
+    left: -120px;
+    width: 50%;
+  }
+
+  .m-designer{
+    position: absolute;
+    top: 200px;
+    right: -120px;
+    width: 50%;    
+  }
+
+  .xs-coder{
+    position: absolute;
+    top: 70px;
+    left: -10px;
+    width: 50%;
+  }
+
+  .xs-designer{
+    position: absolute;
+    top: 70px;
+    right: -10px;
+    width: 50%;      
+  }
+
+  h3 span {
+    color: #444; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+  }
+ 
+  h6 span {
+    color: #444;
+    font: bold 12px/34px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+  }
+
   #coder {
 
   }
