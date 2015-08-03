@@ -175,15 +175,13 @@
   .m-coder {
     position: absolute;
     top: 200px;
-    left: -120px;
-    width: 50%;
+    left: 50px;
   }
 
   .m-designer{
     position: absolute;
     top: 200px;
-    right: -120px;
-    width: 50%;    
+    right: 50px;  
   }
 
   .xs-coder{
