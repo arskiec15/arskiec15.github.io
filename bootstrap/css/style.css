@@ -189,15 +189,13 @@
   .xs-coder{
     position: absolute;
     top: 70px;
-    left: -10px;
-    width: 50%;
+    left: 40px;
   }
 
   .xs-designer{
     position: absolute;
     top: 70px;
-    right: -10px;
-    width: 50%;      
+    right: 40px;      
   }
 
   h3 span {
